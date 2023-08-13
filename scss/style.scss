@@ -415,3 +415,187 @@ body {
         }
     }
 }
+
+.main__about {
+    .main__about__title {
+        @extend %title;
+        font-size: 2.5rem;
+        width: 470px;
+        margin: 32px 0;
+    }
+    .main__about__text {
+        @extend %text-color-font;
+        margin: 42px 0;
+        width: 570px;
+    }
+    margin: 100px auto;
+    // display: flex;
+    .frame1 {
+        display: flex;
+        gap: 30px;
+    }
+    .frame2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .frame3 {
+        display: flex;
+        justify-content: center;
+    }
+    .frames {
+        gap: 30px;
+        margin: 90px 0;
+    }
+
+    .main__about__img_frame2 {
+        .frame2 {
+            position: relative;
+            right: -200px;
+            z-index: -2;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .frame2-1 {
+            width: 600px;
+            // height: auto;
+            position: relative;
+            // padding: 45px;
+            // margin: 0 auto;
+            // border: 1px solid;
+
+            .fbox,
+            .stul,
+            .sbox,
+            .tbox,
+            .fobox,
+            .wuman {
+                position: relative;
+            }
+            .stul,
+            .wuman {
+                z-index: -1;
+            }
+            .fbox {
+                left: 60px;
+                bottom: 0;
+            }
+            .stul {
+                left: 10px;
+                top: 0;
+            }
+            .sbox {
+                left: -60px;
+            }
+            .tbox {
+                left: -45px;
+                bottom: 20px;
+            }
+
+            .fobox {
+                left: -25px;
+            }
+            .frame2-1__elements {
+                bottom: 0;
+                // top: 500px;
+                position: absolute;
+            }
+            .wuman {
+                right: -380px;
+                bottom: 30px;
+            }
+        }
+    }
+
+    .line {
+        width: 370px;
+        height: 4px;
+        background: #b6cbd8;
+    }
+}
+
+.main__name__header {
+    margin: 0 auto;
+
+    .main__name__header__title {
+        @extend %title;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 42px auto;
+    }
+
+    .main__name__header__form {
+        width: 1400px;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        .payer {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            gap: 20px;
+
+            .payer__form_input-size {
+                width: 370px;
+            }
+
+            .payer__input__radio {
+                display: flex;
+                gap: 20px;
+                padding: 10px;
+                // flex-wrap: wrap;
+            }
+            .payer__input__radio-option {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                padding: 10px;
+            }
+            .payer__input__radio-3 {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 10px;
+            }
+            .label__text {
+                @extend %text-color-font;
+            }
+        }
+        .payer__form_input {
+            @extend %input-size-style;
+            height: 60px;
+            padding: 20px 20px 20px 50px;
+            background-image: url(../img/location.svg);
+            background-repeat: no-repeat;
+            background-position: left 16px center;
+            background-size: 24px;
+        }
+
+        .payer__input__characterization {
+            display: flex;
+            gap: 35px;
+            .input__characterization {
+                width: 100px;
+                height: 60px;
+                @extend %input-size-style;
+                padding: 10px;
+            }
+        }
+        .required {
+            @extend %text-color-font;
+        }
+
+        .sender {
+            display: flex;
+            flex-direction: column;
+
+            .sender__input {
+                display: flex;
+                .sender__input__wrap {
+                }
+            }
+        }
+    }
+}

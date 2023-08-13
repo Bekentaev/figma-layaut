@@ -12,7 +12,7 @@ textarea {
   border: solid 1px #f2f2f2;
 }
 
-.main__select_city .main__select_city__input .main__select_city__input-item .city_input, .header__form .input__massa-wrapper .input__massa-size, .header__form .input_from {
+.main__name__header .main__name__header__form .payer__input__characterization .input__characterization, .main__name__header .main__name__header__form .payer__form_input, .main__select_city .main__select_city__input .main__select_city__input-item .city_input, .header__form .input__massa-wrapper .input__massa-size, .header__form .input_from {
   border-radius: 10px;
   border: 1px solid rgba(18, 38, 103, 0.3);
   background: #fff;
@@ -30,7 +30,7 @@ textarea {
   line-height: 160.187%; /* 25.63px */
 }
 
-.main__select_city .main__select_city__input .main__select_city__input-item p, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__download_wrap .select_box__download_sub_text, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__download_wrap .select_box__download_text, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__text, .main__select_city .main__select_city__wrapper__select .main__select_city__btn, .main__why_us .why_us__wrapper .why_us__item .why_us__item-text, .main__why_us .main__why_us__text, .btn, .header__form .form__btn .form__btn-subtext, .header__form .form__btn .form__btn-text, .header__form .label__text {
+.main__name__header .main__name__header__form .required, .main__name__header .main__name__header__form .payer .label__text, .main__about .main__about__text, .main__select_city .main__select_city__input .main__select_city__input-item p, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__download_wrap .select_box__download_sub_text, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__download_wrap .select_box__download_text, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__text, .main__select_city .main__select_city__wrapper__select .main__select_city__btn, .main__why_us .why_us__wrapper .why_us__item .why_us__item-text, .main__why_us .main__why_us__text, .btn, .header__form .form__btn .form__btn-subtext, .header__form .form__btn .form__btn-text, .header__form .label__text {
   color: #5f5f5f;
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Work Sans", sans-serif;
@@ -39,7 +39,7 @@ textarea {
   line-height: 160.188%; /* 25.63px */
 }
 
-.main__select_city .main__select_city__title, .main__why_us .main__why_us__title, .header__content .header__subtitle, .header__content .header__title {
+.main__name__header .main__name__header__title, .main__about .main__about__title, .main__select_city .main__select_city__title, .main__why_us .main__why_us__title, .header__content .header__subtitle, .header__content .header__title {
   color: #5f5f5f;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
@@ -327,6 +327,159 @@ body {
 }
 .main__select_city .main__select_city__input .main__select_city__input-item .price_size {
   width: 90px;
+}
+
+.main__about {
+  margin: 100px auto;
+}
+.main__about .main__about__title {
+  font-size: 2.5rem;
+  width: 470px;
+  margin: 32px 0;
+}
+.main__about .main__about__text {
+  margin: 42px 0;
+  width: 570px;
+}
+.main__about .frame1 {
+  display: flex;
+  gap: 30px;
+}
+.main__about .frame2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.main__about .frame3 {
+  display: flex;
+  justify-content: center;
+}
+.main__about .frames {
+  gap: 30px;
+  margin: 90px 0;
+}
+.main__about .main__about__img_frame2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.main__about .main__about__img_frame2 .frame2 {
+  position: relative;
+  right: -200px;
+  z-index: -2;
+}
+.main__about .main__about__img_frame2 .frame2-1 {
+  width: 600px;
+  position: relative;
+}
+.main__about .main__about__img_frame2 .frame2-1 .fbox,
+.main__about .main__about__img_frame2 .frame2-1 .stul,
+.main__about .main__about__img_frame2 .frame2-1 .sbox,
+.main__about .main__about__img_frame2 .frame2-1 .tbox,
+.main__about .main__about__img_frame2 .frame2-1 .fobox,
+.main__about .main__about__img_frame2 .frame2-1 .wuman {
+  position: relative;
+}
+.main__about .main__about__img_frame2 .frame2-1 .stul,
+.main__about .main__about__img_frame2 .frame2-1 .wuman {
+  z-index: -1;
+}
+.main__about .main__about__img_frame2 .frame2-1 .fbox {
+  left: 60px;
+  bottom: 0;
+}
+.main__about .main__about__img_frame2 .frame2-1 .stul {
+  left: 10px;
+  top: 0;
+}
+.main__about .main__about__img_frame2 .frame2-1 .sbox {
+  left: -60px;
+}
+.main__about .main__about__img_frame2 .frame2-1 .tbox {
+  left: -45px;
+  bottom: 20px;
+}
+.main__about .main__about__img_frame2 .frame2-1 .fobox {
+  left: -25px;
+}
+.main__about .main__about__img_frame2 .frame2-1 .frame2-1__elements {
+  bottom: 0;
+  position: absolute;
+}
+.main__about .main__about__img_frame2 .frame2-1 .wuman {
+  right: -380px;
+  bottom: 30px;
+}
+.main__about .line {
+  width: 370px;
+  height: 4px;
+  background: #b6cbd8;
+}
+
+.main__name__header {
+  margin: 0 auto;
+}
+.main__name__header .main__name__header__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 42px auto;
+}
+.main__name__header .main__name__header__form {
+  width: 1400px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__name__header .main__name__header__form .payer {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+}
+.main__name__header .main__name__header__form .payer .payer__form_input-size {
+  width: 370px;
+}
+.main__name__header .main__name__header__form .payer .payer__input__radio {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+.main__name__header .main__name__header__form .payer .payer__input__radio-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px;
+}
+.main__name__header .main__name__header__form .payer .payer__input__radio-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+.main__name__header .main__name__header__form .payer__form_input {
+  height: 60px;
+  padding: 20px 20px 20px 50px;
+  background-image: url(../img/location.svg);
+  background-repeat: no-repeat;
+  background-position: left 16px center;
+  background-size: 24px;
+}
+.main__name__header .main__name__header__form .payer__input__characterization {
+  display: flex;
+  gap: 35px;
+}
+.main__name__header .main__name__header__form .payer__input__characterization .input__characterization {
+  width: 100px;
+  height: 60px;
+  padding: 10px;
+}
+.main__name__header .main__name__header__form .sender {
+  display: flex;
+  flex-direction: column;
+}
+.main__name__header .main__name__header__form .sender .sender__input {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
