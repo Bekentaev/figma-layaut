@@ -30,7 +30,7 @@ textarea {
   line-height: 160.187%; /* 25.63px */
 }
 
-.main__name__header .main__name__header__form .required, .main__name__header .main__name__header__form .payer .label__text, .main__about .main__about__text, .main__select_city .main__select_city__input .main__select_city__input-item p, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__download_wrap .select_box__download_sub_text, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__download_wrap .select_box__download_text, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__text, .main__select_city .main__select_city__wrapper__select .main__select_city__btn, .main__why_us .why_us__wrapper .why_us__item .why_us__item-text, .main__why_us .main__why_us__text, .btn, .header__form .form__btn .form__btn-subtext, .header__form .form__btn .form__btn-text, .header__form .label__text {
+.contact .contact__info_text__wrap .s > a, .contact .contact__info_text__wrap .s, .contact .contact__info_text__wrap .f, .label__text, .main__name__header .main__name__header__form .sender__btns .send-request-text, .main__name__header .main__name__header__form .sender .sender__form_textarea-input, .main__name__header .main__name__header__form .required, .main__about .main__about__text, .main__select_city .main__select_city__input .main__select_city__input-item p, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__download_wrap .select_box__download_sub_text, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__download_wrap .select_box__download_text, .main__select_city .main__select_city__wrapper__select__box .select_box__content .select_box__text, .main__select_city .main__select_city__wrapper__select .main__select_city__btn, .main__why_us .why_us__wrapper .why_us__item .why_us__item-text, .main__why_us .main__why_us__text, .btn, .header__form .form__btn .form__btn-subtext, .header__form .form__btn .form__btn-text, .header__form .label__text {
   color: #5f5f5f;
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Work Sans", sans-serif;
@@ -39,7 +39,7 @@ textarea {
   line-height: 160.188%; /* 25.63px */
 }
 
-.main__name__header .main__name__header__title, .main__about .main__about__title, .main__select_city .main__select_city__title, .main__why_us .main__why_us__title, .header__content .header__subtitle, .header__content .header__title {
+.contact .contact__info_text__header, .main__name__header .main__name__header__title, .main__about .main__about__title, .main__select_city .main__select_city__title, .main__why_us .main__why_us__title, .header__content .header__subtitle, .header__content .header__title {
   color: #5f5f5f;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
@@ -52,11 +52,10 @@ html {
 }
 
 body {
-  max-width: 1920px;
+  min-width: 1920px;
   margin: 0 auto;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
-  border: 1px solid gray;
   font-style: normal;
 }
 
@@ -476,10 +475,132 @@ body {
 }
 .main__name__header .main__name__header__form .sender {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 700px;
 }
-.main__name__header .main__name__header__form .sender .sender__input {
+.main__name__header .main__name__header__form .sender .sender__column {
   display: flex;
+  gap: 40px;
+  flex: 50%;
+}
+.main__name__header .main__name__header__form .sender .sender__form_textarea-size {
+  width: 700px;
+  height: 260px;
+}
+.main__name__header .main__name__header__form .sender .sender__form_input-size {
+  width: 336px;
+}
+.main__name__header .main__name__header__form .sender .sender__radio {
+  margin: 20px 0 0 0;
+}
+.main__name__header .main__name__header__form .sender .wrapps {
+  margin: -10px auto;
+}
+.main__name__header .main__name__header__form .sender .sender__form_textarea-input {
+  margin: 25px 0 0 0;
+  display: flex;
+  gap: 20px;
+}
+.main__name__header .main__name__header__form .sender__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__name__header .main__name__header__form .sender__btns .send-request {
+  display: block;
+  text-align: center;
+  margin: 80px auto 0 auto;
+  width: 250px;
+  height: 60px;
+}
+.main__name__header .main__name__header__form .sender__btns .send-request-text {
+  width: 599px;
+  height: 50px;
+  margin: 20px auto;
+}
+
+.contact {
+  margin: 100px auto 0 auto;
+}
+.contact .contact__info {
+  display: flex;
+  margin: auto 375px;
+  gap: 20px;
+}
+.contact .contact__info_text__header {
+  font-size: 40px;
+}
+.contact .contact__info_text__wrap {
+  display: flex;
+  margin: 20px 0;
+}
+.contact .contact__info_text__wrap .f {
+  margin-right: 30px;
+  width: 170px;
+  text-align: left;
+  color: #3448ad;
+  font-weight: 700;
+}
+.contact .contact__info_text__wrap .s {
+  text-align: left;
+  width: 370px;
+  font-weight: 700;
+}
+.contact .contact__info_text__wrap .s > a {
+  text-decoration: none;
+  color: #3448ad;
+  font-weight: 700;
+}
+.contact .contact__info_text__wrap .s > a:hover {
+  text-decoration: underline;
+}
+.contact .bch {
+  margin: -5px auto;
+  background: #c5eef9;
+  width: 1920px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.footer .footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 375px;
+}
+.footer .footer__wrap .footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer .footer__wrap .footer__logo p {
+  width: 170px;
+  height: 60px;
+  color: #382933;
+  font-family: Work Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 147.059% */
+}
+.footer .footer__wrap .author {
+  color: #5f5f5f;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 100% */
+}
+.footer p {
+  color: #5f5f5f;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160.188%; /* 25.63px */
+  margin: 30px auto;
 }
 
 /*# sourceMappingURL=style.css.map */
