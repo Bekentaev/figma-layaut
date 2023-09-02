@@ -27,7 +27,7 @@ body {
   font-size: 18px;
 }
 
-.main .section__services .section__services_box__wrapper .section__services_box div p, .main .main__section .main__section__left .section__left__text {
+.main .section__travel_point .travel_point_right .travel_point-box .box .box__tex, .main .section__travel_point .travel_point_right .travel_point_header .travel__point_text, .main .section__top .section__top_box__wrapper .box .box__price .box__location, .main .section__services .section__services_box__wrapper .section__services_box div p, .main .main__section .main__section__left .section__left__text {
   color: rgba(25, 24, 37, 0.5019607843);
   font-family: "Inter";
   font-style: normal;
@@ -35,7 +35,7 @@ body {
   line-height: 160%; /* 28.8px */
 }
 
-.main .section__top .top__wrapper .top__header .section__top_subtitle, .main .section__top .top__wrapper .top__header .section__top_title, .main .section__services .section__services_box__wrapper .section__services_box div h3, .main .section__services .section__services_header .section__services_header__text, .main .section__services .section__services_header .section__services_header__title, .main .main__section .main__section__right .main__section__right__map, .main .main__section .main__section__left .section__left__header .section__left__header_title, .main .main__section .main__section__left .section__left__div_btn, .header, .btn {
+.main .section__travel_point .travel_point_right .travel_point-box .box .box__title, .main .section__travel_point .travel_point_right .travel_point_header .travel__point_sub-title, .main .section__travel_point .travel_point_right .travel_point_header .travel__point_title, .main .section__top .section__top_box__wrapper .box .box__rating .box__rating_text, .main .section__top .section__top_box__wrapper .box .box__price .box__price_price, .main .section__top .section__top_box__wrapper .box .box__price .box__price_title, .main .section__top .top__wrapper .top__header .section__top_subtitle, .main .section__top .top__wrapper .top__header .section__top_title, .main .section__services .section__services_box__wrapper .section__services_box div h3, .main .section__services .section__services_header .section__services_header__text, .main .section__services .section__services_header .section__services_header__title, .main .main__section .main__section__right .main__section__right__map, .main .main__section .main__section__left .section__left__header .section__left__header_title, .main .main__section .main__section__left .section__left__div_btn, .header, .btn {
   color: #191825;
   font-family: CircularStd;
   font-style: normal;
@@ -330,6 +330,189 @@ body {
 }
 .main .section__top .top__wrapper .section__top_btn .btn__right {
   background: #5d50c6;
+}
+.main .section__top .section__top_box__wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.main .section__top .section__top_box__wrapper .box {
+  border-radius: 0px 0px 32px 32px;
+  background: #fff;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 32px 71px 0px rgba(0, 0, 0, 0.05), 0px 128px 128px 0px rgba(0, 0, 0, 0.04), 0px 288px 173px 0px rgba(0, 0, 0, 0.03), 0px 513px 205px 0px rgba(0, 0, 0, 0.01), 0px 801px 224px 0px rgba(0, 0, 0, 0);
+}
+.main .section__top .section__top_box__wrapper .box .box__price {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .section__top .section__top_box__wrapper .box .box__price .box__price_title {
+  font-size: 1.5rem;
+  width: 200px;
+}
+.main .section__top .section__top_box__wrapper .box .box__price .box__price_price {
+  font-size: 1.5rem;
+  width: 80px;
+  color: #f85e9f;
+}
+.main .section__top .section__top_box__wrapper .box .box__price .box__location {
+  margin-top: 16px;
+}
+.main .section__top .section__top_box__wrapper .box .box__rating {
+  display: flex;
+  gap: 8px;
+  padding: 0 32px 32px 32px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main .section__top .section__top_box__wrapper .box .box__rating .box__rating_text {
+  font-size: 1.5rem;
+  color: #ff5722;
+}
+.main .section__travel_point {
+  margin: 64px 0;
+  position: relative;
+  width: 1275px;
+  height: 700px;
+  display: flex;
+  gap: 42px;
+  align-items: flex-start;
+}
+.main .section__travel_point .travel_point_left {
+  position: absolute;
+  left: -165px;
+  z-index: -1;
+  border-radius: 0px 500px 500px 0px;
+  background: #facd49;
+  width: 705px;
+  height: 550px;
+  bottom: 0;
+}
+.main .section__travel_point .travel_point_left .travel_point_images {
+  background-image: url(../img/travelPoint1.png);
+  position: absolute;
+  width: 695px;
+  height: 680px;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+.main .section__travel_point .travel_point_left .travel_point_images .circle-small {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  left: 100px;
+  top: 105px;
+  filter: blur(2px);
+  background: linear-gradient(281deg, #5d50c6 7.11%, #f85e9f 93.54%);
+  border-radius: 100px;
+}
+.main .section__travel_point .travel_point_left .travel_point_images .circle-big {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  filter: blur(6px);
+  background: linear-gradient(281deg, #5d50c6 7.11%, #f85e9f 93.54%);
+  border-radius: 100px;
+  position: absolute;
+  right: 60px;
+}
+.main .section__travel_point .travel_point_left .travel_point_images .circle-orange-small {
+  background-color: #ff5722;
+  filter: blur(2px);
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  position: absolute;
+  right: 0;
+  top: 300px;
+  right: 200px;
+}
+.main .section__travel_point .travel_point_left .travel_point_images .circle-orange-big {
+  width: 32px;
+  height: 32px;
+  background-color: #ff5722;
+  filter: blur(2px);
+  border-radius: 100px;
+  position: absolute;
+  top: 450px;
+  right: 50px;
+}
+.main .section__travel_point .travel_point_left .travel_point_images .circle-yellow {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  position: absolute;
+  right: -30px;
+  top: 150px;
+  background-color: #facd49;
+  filter: blur(2px);
+}
+.main .section__travel_point .travel_point_right {
+  position: absolute;
+  right: 165px;
+  width: 445px;
+}
+.main .section__travel_point .travel_point_right .ticket {
+  position: absolute;
+  right: -80px;
+  top: 250px;
+  width: 112px;
+  height: 112px;
+  padding: 32px;
+  border-radius: 100px;
+  background: #facd49;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.03), 0px 15px 34px 0px rgba(0, 0, 0, 0.03), 0px 62px 62px 0px rgba(0, 0, 0, 0.02), 0px 139px 83px 0px rgba(0, 0, 0, 0.01), 0px 246px 99px 0px rgba(0, 0, 0, 0), 0px 385px 108px 0px rgba(0, 0, 0, 0);
+}
+.main .section__travel_point .travel_point_right .ticket svg {
+  width: 48px;
+  height: 48px;
+}
+.main .section__travel_point .travel_point_right .travel_point_header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main .section__travel_point .travel_point_right .travel_point_header .travel__point_title {
+  font-size: 1.5rem;
+  color: #f85e9f;
+  text-transform: uppercase;
+}
+.main .section__travel_point .travel_point_right .travel_point_header .travel__point_sub-title {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+.main .section__travel_point .travel_point_right .travel_point_header .travel__point_text {
+  font-size: 1rem;
+}
+.main .section__travel_point .travel_point_right .travel_point-box {
+  margin-top: 64px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.main .section__travel_point .travel_point_right .travel_point-box .box {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  width: 206px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 32px;
+  border: 1px solid rgba(25, 24, 37, 0.1);
+  background: #fff;
+  padding: 32px;
+}
+.main .section__travel_point .travel_point_right .travel_point-box .box .box__title {
+  color: #ff5722;
+  font-size: 1.9rem;
+}
+.main .section__travel_point .travel_point_right .travel_point-box .box .box__tex {
+  color: #191825;
 }
 
 .object {

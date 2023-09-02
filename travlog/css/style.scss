@@ -400,6 +400,226 @@ body {
                 }
             }
         }
+
+        .section__top_box__wrapper {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+
+            .box {
+                border-radius: 0px 0px 32px 32px;
+                background: #fff;
+                box-shadow:
+                    0px 0px 0px 0px rgba(0, 0, 0, 0.05),
+                    0px 32px 71px 0px rgba(0, 0, 0, 0.05),
+                    0px 128px 128px 0px rgba(0, 0, 0, 0.04),
+                    0px 288px 173px 0px rgba(0, 0, 0, 0.03),
+                    0px 513px 205px 0px rgba(0, 0, 0, 0.01),
+                    0px 801px 224px 0px rgba(0, 0, 0, 0);
+
+                .box__price {
+                    padding: 32px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .box__price_title {
+                        @extend %title;
+                        font-size: 1.5rem;
+                        width: 200px;
+                    }
+                    .box__price_price {
+                        @extend %title;
+                        font-size: 1.5rem;
+                        width: 80px;
+                        color: $SECTION_TITLE;
+                    }
+                    .box__location {
+                        margin-top: 16px;
+                        @extend %text;
+                    }
+                }
+                .box__rating {
+                    display: flex;
+                    gap: 8px;
+                    padding: 0 32px 32px 32px;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    .box__rating_text {
+                        @extend %title;
+                        font-size: 1.5rem;
+                        color: #ff5722;
+                    }
+                }
+            }
+        }
+    }
+    .section__travel_point {
+        margin: 64px 0;
+        position: relative;
+        width: 1275px;
+        height: 700px;
+        display: flex;
+        gap: 42px;
+        align-items: flex-start;
+
+        .travel_point_left {
+            position: absolute;
+            left: -165px;
+            z-index: -1;
+            border-radius: 0px 500px 500px 0px;
+            background: #facd49;
+            width: 705px;
+            height: 550px;
+            bottom: 0;
+
+            .travel_point_images {
+                background-image: url(../img/travelPoint1.png);
+                position: absolute;
+                width: 695px;
+                height: 680px;
+                z-index: 1;
+                left: 0;
+                bottom: 0;
+
+                .circle-small {
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    z-index: 1;
+                    left: 100px;
+                    top: 105px;
+                    filter: blur(2px);
+                    background: linear-gradient(281deg, #5d50c6 7.11%, #f85e9f 93.54%);
+                    border-radius: 100px;
+                }
+                .circle-big {
+                    width: 96px;
+                    height: 96px;
+                    flex-shrink: 0;
+                    filter: blur(6px);
+                    background: linear-gradient(281deg, #5d50c6 7.11%, #f85e9f 93.54%);
+                    border-radius: 100px;
+
+                    position: absolute;
+                    right: 60px;
+                }
+                .circle-orange-small {
+                    background-color: #ff5722;
+                    filter: blur(2px);
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 100px;
+                    position: absolute;
+                    right: 0;
+                    top: 300px;
+                    right: 200px;
+                }
+                .circle-orange-big {
+                    width: 32px;
+                    height: 32px;
+                    background-color: #ff5722;
+                    filter: blur(2px);
+                    border-radius: 100px;
+                    position: absolute;
+
+                    top: 450px;
+                    right: 50px;
+                }
+                .circle-yellow {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100px;
+
+                    position: absolute;
+                    right: -30px;
+                    top: 150px;
+                    background-color: #facd49;
+                    filter: blur(2px);
+                }
+            }
+        }
+
+        .travel_point_right {
+            position: absolute;
+            right: 165px;
+            width: 445px;
+            .ticket {
+                position: absolute;
+                right: -80px;
+                top: 250px;
+                width: 112px;
+                height: 112px;
+                padding: 32px;
+                border-radius: 100px;
+                background: #facd49;
+                box-shadow:
+                    0px 0px 0px 0px rgba(0, 0, 0, 0.03),
+                    0px 15px 34px 0px rgba(0, 0, 0, 0.03),
+                    0px 62px 62px 0px rgba(0, 0, 0, 0.02),
+                    0px 139px 83px 0px rgba(0, 0, 0, 0.01),
+                    0px 246px 99px 0px rgba(0, 0, 0, 0),
+                    0px 385px 108px 0px rgba(0, 0, 0, 0);
+                svg {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+            .travel_point_header {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .travel__point_title {
+                    @extend %title;
+                    font-size: 1.5rem;
+                    color: $SECTION_TITLE;
+                    text-transform: uppercase;
+                }
+
+                .travel__point_sub-title {
+                    @extend %title;
+                    font-size: 2.5rem;
+                    margin-bottom: 16px;
+                }
+                .travel__point_text {
+                    @extend %text;
+                    font-size: 1rem;
+                }
+            }
+            .travel_point-box {
+                margin-top: 64px;
+                display: flex;
+                gap: 32px;
+                justify-content: center;
+                align-items: center;
+
+                .box {
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 32px;
+                    width: 206px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    border-radius: 32px;
+                    border: 1px solid rgba(25, 24, 37, 0.1);
+                    background: #fff;
+                    padding: 32px;
+
+                    .box__title {
+                        color: #ff5722;
+                        @extend %title;
+                        font-size: 1.9rem;
+                    }
+                    .box__tex {
+                        @extend %text;
+                        color: $MAIN_COLOR;
+                    }
+                }
+            }
+        }
     }
 }
 
