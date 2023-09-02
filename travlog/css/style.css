@@ -13,12 +13,22 @@ textarea {
   border: solid 1px #f2f2f2;
 }
 
+button,
+button:active,
+button:focus {
+  border: none;
+}
+
 @font-face {
   font-family: "CircularStd";
   src: url(../fonts/CircularStd-Bold.ttf);
 }
-* {
-  border: 1px solid gray;
+@font-face {
+  font-family: "CircularStdMedium";
+  src: url(../fonts/CircularStd-Medium.ttf);
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,7 +37,7 @@ body {
   font-size: 18px;
 }
 
-.main .section__travel_point .travel_point_right .travel_point-box .box .box__tex, .main .section__travel_point .travel_point_right .travel_point_header .travel__point_text, .main .section__top .section__top_box__wrapper .box .box__price .box__location, .main .section__services .section__services_box__wrapper .section__services_box div p, .main .main__section .main__section__left .section__left__text {
+.footer .footer__us .us p, .footer .footer__header .footer__text, .main .section__key-features .section__key-features-left .key__box .box .box__content .box__text, .main .section__key-features .section__key-features-left .section__key-features__header .section__key-features__text, .main .section__travel_point .travel_point_right .travel_point-box .box .box__tex, .main .section__travel_point .travel_point_right .travel_point_header .travel__point_text, .main .section__top .section__top_box__wrapper .box .box__price .box__location, .main .section__services .section__services_box__wrapper .section__services_box div p, .main .main__section .main__section__left .section__left__text {
   color: rgba(25, 24, 37, 0.5019607843);
   font-family: "Inter";
   font-style: normal;
@@ -35,7 +45,7 @@ body {
   line-height: 160%; /* 28.8px */
 }
 
-.main .section__travel_point .travel_point_right .travel_point-box .box .box__title, .main .section__travel_point .travel_point_right .travel_point_header .travel__point_sub-title, .main .section__travel_point .travel_point_right .travel_point_header .travel__point_title, .main .section__top .section__top_box__wrapper .box .box__rating .box__rating_text, .main .section__top .section__top_box__wrapper .box .box__price .box__price_price, .main .section__top .section__top_box__wrapper .box .box__price .box__price_title, .main .section__top .top__wrapper .top__header .section__top_subtitle, .main .section__top .top__wrapper .top__header .section__top_title, .main .section__services .section__services_box__wrapper .section__services_box div h3, .main .section__services .section__services_header .section__services_header__text, .main .section__services .section__services_header .section__services_header__title, .main .main__section .main__section__right .main__section__right__map, .main .main__section .main__section__left .section__left__header .section__left__header_title, .main .main__section .main__section__left .section__left__div_btn, .header, .btn {
+.footer .footer__us .us h2, .footer .footer__header .footer__logo .logo__text, .main .section__subcribe .section__subcribe__form .form__inputs .form_btn, .main .section__subcribe .section__subcribe__form .form__inputs .form__input, .main .section__subcribe .section__subcribe__form .form__header .form__subtitle, .main .section__subcribe .section__subcribe__form .form__header .form__title, .main .section__testimonials .section__testimonials__content .section__testimonials__content_text, .main .section__testimonials .section__testimonials__content .section__testimonials__content_title span, .main .section__testimonials .section__testimonials__content .section__testimonials__content_title, .main .section__testimonials .section__testimonials__header .section__testimonials__subtitle, .main .section__testimonials .section__testimonials__header .section__testimonials__title, .main .section__key-features .section__key-features-left .key__box .box .box__content .box__title, .main .section__key-features .section__key-features-left .section__key-features__header .section__key-features__subtitle, .main .section__key-features .section__key-features-left .section__key-features__header .section__key-features__title, .main .section__travel_point .travel_point_right .travel_point-box .box .box__title, .main .section__travel_point .travel_point_right .travel_point_header .travel__point_sub-title, .main .section__travel_point .travel_point_right .travel_point_header .travel__point_title, .main .section__top .section__top_box__wrapper .box .box__rating .box__rating_text, .main .section__top .section__top_box__wrapper .box .box__price .box__price_price, .main .section__top .section__top_box__wrapper .box .box__price .box__price_title, .main .section__top .top__wrapper .top__header .section__top_subtitle, .main .section__top .top__wrapper .top__header .section__top_title, .main .section__services .section__services_box__wrapper .section__services_box div h3, .main .section__services .section__services_header .section__services_header__text, .main .section__services .section__services_header .section__services_header__title, .main .main__section .main__section__right .main__section__right__map, .main .main__section .main__section__left .section__left__header .section__left__header_title, .main .main__section .main__section__left .section__left__div_btn, .header, .btn {
   color: #191825;
   font-family: CircularStd;
   font-style: normal;
@@ -296,6 +306,16 @@ body {
   background: #fff;
   left: 742px;
 }
+.main .section__top {
+  position: relative;
+}
+.main .section__top .obj {
+  position: absolute;
+  width: 107px;
+  height: 106.549px;
+  right: -150px;
+  top: 190px;
+}
 .main .section__top .top__wrapper {
   margin: 64px 0;
   display: flex;
@@ -514,6 +534,279 @@ body {
 .main .section__travel_point .travel_point_right .travel_point-box .box .box__tex {
   color: #191825;
 }
+.main .section__key-features {
+  display: flex;
+  gap: 42px;
+}
+.main .section__key-features .section__key-features-left {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.main .section__key-features .section__key-features-left .section__key-features__header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main .section__key-features .section__key-features-left .section__key-features__header .section__key-features__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #f85e9f;
+}
+.main .section__key-features .section__key-features-left .section__key-features__header .section__key-features__subtitle {
+  font-size: 2.5rem;
+}
+.main .section__key-features .section__key-features-left .section__key-features__header .section__key-features__text {
+  font-size: 1rem;
+  margin-top: 16px;
+}
+.main .section__key-features .section__key-features-left .key__box .box {
+  display: flex;
+  padding: 32px;
+}
+.main .section__key-features .section__key-features-left .key__box .box svg {
+  background: #ff5722;
+}
+.main .section__key-features .section__key-features-left .key__box .box .imgcalendar {
+  background: #facd49;
+}
+.main .section__key-features .section__key-features-left .key__box .box .imgticket {
+  background: #f85e9f;
+}
+.main .section__key-features .section__key-features-left .key__box .box .img {
+  width: 100px;
+  height: 100px;
+  padding: 32px;
+  border-radius: 32px;
+}
+.main .section__key-features .section__key-features-left .key__box .box .box__content {
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.main .section__key-features .section__key-features-left .key__box .box .box__content .box__title {
+  font-size: 1.5rem;
+}
+.main .section__key-features .section__key-features-left .key__box .box .box__content .box__text {
+  font-size: 1rem;
+}
+.main .section__key-features .section__key-features-right {
+  position: relative;
+  width: 600px;
+}
+.main .section__key-features .section__key-features-right .img1 {
+  position: absolute;
+  right: -244px;
+  z-index: -1;
+}
+.main .section__key-features .section__key-features-right .img3 {
+  position: absolute;
+  top: 50px;
+  left: -80px;
+}
+.main .section__key-features .section__key-features-right .img2 {
+  position: absolute;
+  bottom: -107px;
+  right: -100px;
+}
+.main .section__testimonials {
+  margin: 175px auto;
+  width: 920px;
+  height: 645px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.main .section__testimonials .section__testimonials-btns {
+  position: relative;
+}
+.main .section__testimonials .section__testimonials-btns .testimonials-btns__left {
+  border-radius: 100px;
+  border: 1px solid rgba(25, 24, 37, 0.1);
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -100px;
+  bottom: -325px;
+}
+.main .section__testimonials .section__testimonials-btns .testimonials-btns__right {
+  border-radius: 100px;
+  background: #5d50c6;
+  width: 100px;
+  height: 100px;
+  color: white;
+  right: -100px;
+  bottom: -325px;
+  position: absolute;
+}
+.main .section__testimonials .section__testimonials__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.main .section__testimonials .section__testimonials__header .section__testimonials__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #f85e9f;
+}
+.main .section__testimonials .section__testimonials__header .section__testimonials__subtitle {
+  font-size: 2.5rem;
+}
+.main .section__testimonials .section__testimonials__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.main .section__testimonials .section__testimonials__content .section__testimonials__content_title {
+  font-size: 1.5rem;
+  color: rgba(25, 24, 37, 0.75);
+}
+.main .section__testimonials .section__testimonials__content .section__testimonials__content_title span {
+  font-size: 1.8rem;
+  color: #ff5722;
+}
+.main .section__testimonials .section__testimonials__content .stars {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+}
+.main .section__testimonials .section__testimonials__content .section__testimonials__content_text {
+  font-size: 1.5rem;
+  color: rgba(25, 24, 37, 0.75);
+  font-family: CircularStdMedium;
+}
+.main .section__testimonials .section__testimonials_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.main .section__subcribe {
+  margin: 64px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main .section__subcribe .bg {
+  background-image: url(../img/Graphic_Elements.svg);
+  width: 183.86px;
+  height: 176.35px;
+  position: absolute;
+  top: -59px;
+  left: -43px;
+}
+.main .section__subcribe .bg2 {
+  background-image: url(../img/OBJECTSsub.svg);
+  position: absolute;
+  width: 332px;
+  height: 351.949px;
+  background-repeat: no-repeat;
+  right: -390px;
+  bottom: -220px;
+}
+.main .section__subcribe .section__subcribe__form {
+  width: 1110px;
+  padding: 128px 64px;
+  border-radius: 32px;
+  background: rgba(250, 205, 73, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  text-align: center;
+}
+.main .section__subcribe .section__subcribe__form .form__header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.main .section__subcribe .section__subcribe__form .form__header .form__title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #f85e9f;
+  letter-spacing: 4.6px;
+}
+.main .section__subcribe .section__subcribe__form .form__header .form__subtitle {
+  font-size: 3rem;
+}
+.main .section__subcribe .section__subcribe__form .form__inputs {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+.main .section__subcribe .section__subcribe__form .form__inputs .form__input {
+  border-radius: 32px;
+  padding: 32px 32px 32px 64px;
+  width: 683px;
+  font-size: 1.5rem;
+  background-image: url(../img/message.svg);
+  background-repeat: no-repeat;
+  background-position: left 32px center;
+}
+.main .section__subcribe .section__subcribe__form .form__inputs .form_btn {
+  padding: 32px 64px;
+  border-radius: 32px;
+  font-size: 1.5rem;
+  color: white;
+  background: #5d50c6;
+}
+
+.footer {
+  margin: 128px auto 86px auto;
+  display: flex;
+  gap: 158px;
+}
+.footer .footer__header {
+  display: flex;
+  flex-direction: column;
+  width: 278px;
+  gap: 32px;
+}
+.footer .footer__header .footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer .footer__header .footer__logo .logo__text {
+  font-size: 1.5rem;
+}
+.footer .footer__header .footer__text {
+  margin-bottom: 32px;
+  font-size: 1.4rem;
+}
+.footer .footer__header .footer__social_link {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.footer .footer__us {
+  display: flex;
+  gap: 121px;
+}
+.footer .footer__us .us {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer .footer__us .us h2 {
+  font-size: 1.5rem;
+}
+.footer .footer__us .us p {
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
 
 .object {
   position: absolute;
@@ -522,6 +815,16 @@ body {
   height: 169.949px;
   left: -127px;
   bottom: -64px;
+}
+
+.section__testimonials-bg {
+  background-image: url(../img/Testimonialsbg.svg);
+  position: absolute;
+  width: 1440px;
+  height: 900px;
+  left: -265px;
+  top: -200px;
+  opacity: 0.3;
 }
 
 /*scrollbar*/
