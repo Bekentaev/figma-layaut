@@ -83,6 +83,20 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 32px auto;
+  position: relative;
+  max-width: 1440px;
+  overflow: visible;
+}
+.header .gradient {
+  width: 500px;
+  height: 500px;
+  opacity: 0.5;
+  z-index: -1;
+  background: #ff5722;
+  position: absolute;
+  border-radius: 500px;
+  filter: blur(250px);
+  left: -500px;
 }
 .header .header__logo {
   display: flex;
@@ -233,6 +247,19 @@ body {
 .main .section__sponsors {
   position: relative;
   margin: 64px auto;
+  max-width: 1440px;
+}
+.main .section__sponsors .gradient {
+  width: 500px;
+  height: 500px;
+  opacity: 0.5;
+  z-index: -1;
+  background: #ff5722;
+  position: absolute;
+  border-radius: 500px;
+  filter: blur(250px);
+  right: -100px;
+  bottom: -200px;
 }
 .main .section__sponsors .sponsors__group {
   display: flex;
@@ -358,7 +385,7 @@ body {
   justify-content: center;
 }
 .main .section__top .section__top_box__wrapper .box {
-  border-radius: 0px 0px 32px 32px;
+  border-radius: 32px 32px 32px 32px;
   background: #fff;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 32px 71px 0px rgba(0, 0, 0, 0.05), 0px 128px 128px 0px rgba(0, 0, 0, 0.04), 0px 288px 173px 0px rgba(0, 0, 0, 0.03), 0px 513px 205px 0px rgba(0, 0, 0, 0.01), 0px 801px 224px 0px rgba(0, 0, 0, 0);
 }
@@ -391,13 +418,14 @@ body {
   color: #ff5722;
 }
 .main .section__travel_point {
-  margin: 64px 0;
+  margin: 64px auto;
   position: relative;
-  width: 1275px;
+  max-width: 1275px;
   height: 700px;
   display: flex;
   gap: 42px;
   align-items: flex-start;
+  overflow: hidden;
 }
 .main .section__travel_point .travel_point_left {
   position: absolute;
@@ -598,9 +626,13 @@ body {
   width: 600px;
 }
 .main .section__key-features .section__key-features-right .img1 {
+  background-image: url(../img/keybg.svg);
+  width: 350px;
+  height: 272px;
   position: absolute;
-  right: -244px;
+  right: -140px;
   z-index: -1;
+  overflow: hidden;
 }
 .main .section__key-features .section__key-features-right .img3 {
   position: absolute;
@@ -708,11 +740,12 @@ body {
 .main .section__subcribe .bg2 {
   background-image: url(../img/OBJECTSsub.svg);
   position: absolute;
-  width: 332px;
+  width: 120px;
   height: 351.949px;
   background-repeat: no-repeat;
-  right: -390px;
+  right: -165px;
   bottom: -220px;
+  overflow: hidden;
 }
 .main .section__subcribe .section__subcribe__form {
   width: 1110px;
@@ -820,11 +853,12 @@ button {
 .section__testimonials-bg {
   background-image: url(../img/Testimonialsbg.svg);
   position: absolute;
-  width: 1440px;
+  max-width: 1440px;
   height: 900px;
   left: -265px;
   top: -200px;
   opacity: 0.3;
+  overflow: hidden;
 }
 
 /*scrollbar*/
